@@ -1,0 +1,28 @@
+[package]
+name = "dhcpwebd"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+# Error handling
+anyhow = { version = "1.0" }
+# Config storage
+config = { version = "0.14" }
+# Webserver
+poem = { version = "3.1.5", features = ["rustls", "static-files"]}
+tokio = { version = "1.39.1", features = ["rt-multi-thread", "macros", "signal"] }
+# JSON pack/unpack
+serde = { version = "1.0" }
+serde_json = { version = "1.0" }
+# HTML server-side templating
+hypertext = { version = "0.5.2", features = ["alloc"] }
+# OpenBSD DHCPd Parser
+dhcpd_parser = { version = "0.4.3" }
+# System Stats
+systemstat = { version = "0.2" }
+# Ping
+ping = { version = "0.5" }
+rand = { version = "0.8" }
+# Time Handling
+chrono = { version = "0.4" }
+timeago = { version = "0.4" }

@@ -1,0 +1,6 @@
+[web]
+host = "0.0.0.0:10443"
+
+[leases]
+#filepath = "/var/db/dhcpd.leases"
+filepath = "leases.example"

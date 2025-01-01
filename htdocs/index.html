@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="uk-light uk-background-secondary" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BSD Router Info</title>
+    <style>
+    	.uk-button-success {
+	    	background-color: #28a745 !important;
+			color: #fff;
+    	}
+    </style>
+    <link rel="stylesheet" href="/uikit-3.21.16/css/uikit.min.css" />
+    <script src="/htmx.min.js"></script>
+    <script src="/uikit-3.21.16/js/uikit.min.js"></script>
+</head>
+<body>
+<div class="uk-container uk-margin-top uk-margin-large">
+	<h2>System</h2>
+	<div class="uk-overflow-container" hx-get="/api/sysinfo/html" hx-trigger="load, every 1s"></div>
+	<h2>DHCP Leases</h2>
+	<div class="uk-overflow-container" hx-get="/api/leases/html" hx-trigger="load, every 1s"></div>
+</div>
+</body>
+</html>

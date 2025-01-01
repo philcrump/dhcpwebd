@@ -1,0 +1,14 @@
+lease 192.168.1.101 {
+    starts 3 2025/01/01 18:13:57 UTC;
+    ends 4 2025/01/02 06:13:57 UTC;
+    hardware ethernet 20:7b:d2:c7:8a:66;
+    uid 01:20:7b:d2:c7:8a:66;
+    client-hostname "laptop1";
+}
+lease 192.168.1.100 {
+    starts 1 2024/12/30 01:20:09 UTC;
+    ends 1 2024/12/30 13:20:09 UTC;
+    hardware ethernet c4:c6:e6:f4:ee:55;
+    uid 01:c4:c6:e6:f4:ee:55;
+    client-hostname "desktop2";
+}
